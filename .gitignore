@@ -1,0 +1,7 @@
+data/
+models/
+*.parquet
+*.zip
+*.log
+*.pkl
+*.csv

@@ -1,0 +1,46 @@
+2025-11-20 10:03:12 INFO 200 /home IP=142.250.72.14 Device=Chrome OS=Windows
+2025-11-20 10:03:14 INFO 200 /products IP=142.250.72.14 Device=Chrome OS=Windows
+2025-11-20 10:03:17 WARNING 404 /unknown-page IP=142.250.72.14 Device=Chrome OS=Windows
+
+2025-11-20 10:04:01 ERROR 500 /api/login IP=192.168.1.22 Device=Firefox OS=Linux
+2025-11-20 10:04:02 ERROR 500 /api/login IP=192.168.1.22 Device=Firefox OS=Linux
+2025-11-20 10:04:03 ERROR 500 /api/login IP=192.168.1.22 Device=Firefox OS=Linux
+
+2025-11-20 10:05:33 INFO 200 /profile IP=66.220.144.130 Device=Safari OS=Mac
+2025-11-20 10:05:35 WARNING 403 /admin IP=66.220.144.130 Device=Safari OS=Mac (Unauthorized attempt)
+
+2025-11-20 10:06:01 INFO 200 /login IP=185.13.22.99 Device=Bot OS=None
+2025-11-20 10:06:02 WARNING 401 /login IP=185.13.22.99 Device=Bot OS=None (Failed login)
+2025-11-20 10:06:04 WARNING 401 /login IP=185.13.22.99 Device=Bot OS=None (Failed login)
+2025-11-20 10:06:07 WARNING 401 /login IP=185.13.22.99 Device=Bot OS=None (Failed login)
+2025-11-20 10:06:10 WARNING 401 /login IP=185.13.22.99 Device=Bot OS=None (Brute force attempt detected)
+
+2025-11-20 10:07:44 INFO 200 /home IP=103.21.244.15 Device=Android OS=Android
+2025-11-20 10:07:45 INFO 200 /search?q=shoes IP=103.21.244.15 Device=Android OS=Android
+2025-11-20 10:07:46 WARNING 429 /search?q=shoes IP=103.21.244.15 Device=Android OS=Android (Rate limit exceeded)
+
+2025-11-20 10:08:12 ERROR 503 /payment IP=52.95.110.1 Device=iPhone OS=iOS (Server overload)
+
+# Suspicious: High-frequency requests (Possible DDoS)
+2025-11-20 10:09:00 INFO 200 / IP=185.173.106.22 Device=None OS=None
+2025-11-20 10:09:00 INFO 200 / IP=185.173.106.22 Device=None OS=None
+2025-11-20 10:09:00 INFO 200 / IP=185.173.106.22 Device=None OS=None
+2025-11-20 10:09:00 INFO 200 / IP=185.173.106.22 Device=None OS=None
+2025-11-20 10:09:00 INFO 200 / IP=185.173.106.22 Device=None OS=None
+2025-11-20 10:09:00 WARNING 503 / IP=185.173.106.22 Device=None OS=None (Traffic Spike Detected)
+
+# Successful logins
+2025-11-20 10:09:54 INFO 200 /login IP=117.201.22.140 Device=Chrome OS=Windows (Login Successful)
+2025-11-20 10:10:10 INFO 200 /dashboard IP=117.201.22.140 Device=Chrome OS=Windows
+
+# Windows Severity-style Events
+2025-11-20 10:11:00 CRITICAL EventID=7031 Message="Service terminated unexpectedly" IP=10.0.0.5
+2025-11-20 10:11:02 WARNING EventID=10016 Message="Permission issue detected" IP=10.0.0.5
+2025-11-20 10:11:05 INFO EventID=6005 Message="Event log service started" IP=10.0.0.5
+
+# Geo-based events to test world map
+2025-11-20 10:12:00 INFO 200 /home IP=8.8.8.8 Device=Chrome (USA)
+2025-11-20 10:12:04 INFO 200 /home IP=172.217.22.14 Device=Chrome (USA)
+2025-11-20 10:12:10 INFO 200 /home IP=203.57.34.11 Device=Edge (Australia)
+2025-11-20 10:12:13 INFO 200 /home IP=91.198.174.192 Device=Firefox (Germany)
+2025-11-20 10:12:15 INFO 200 /home IP=49.44.22.101 Device=Android (India)
